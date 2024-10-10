@@ -32,13 +32,13 @@ SECRET_KEY = config("SECRET_KEY")
 if ENVIRONMENT == 'development':
     DEBUG = True
 else:
-    DEBUG = True
+    DEBUG = False
 
 # Hosting platforms 
 if ENVIRONMENT == "development":
     ALLOWED_HOSTS = []
 else:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1',]
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sampleecommerceapi.onrender.com']
 
 
 # Application definition
